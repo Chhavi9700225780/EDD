@@ -1,0 +1,42 @@
+{
+  "kpis": {
+    "oee_percent": 82.5,
+    "throughput": 360,
+    "throughput_target": 400,
+    "downtime_mins": 45,
+    "rm_consumed_today": 1250.5,
+    "inventory_days": 12,
+    "open_alerts": 3,
+    "last_synced": "2025-09-06T14:05:00+05:30"
+  },
+  "production_trend": [
+    {"date":"2025-09-01","production":320},
+    {"date":"2025-09-02","production":340},
+    {"date":"2025-09-03","production":365},
+    {"date":"2025-09-04","production":330},
+    {"date":"2025-09-05","production":370},
+    {"date":"2025-09-06","production":360}
+  ],
+  "materials_usage": [
+    {"date":"2025-09-01","steel":200,"plastic":50,"adhesive":10},
+    {"date":"2025-09-02","steel":220,"plastic":55,"adhesive":12},
+    {"date":"2025-09-03","steel":210,"plastic":60,"adhesive":11},
+    {"date":"2025-09-04","steel":230,"plastic":40,"adhesive":14},
+    {"date":"2025-09-05","steel":225,"plastic":55,"adhesive":13},
+    {"date":"2025-09-06","steel":240,"plastic":50,"adhesive":12}
+  ],
+  "downtime_events":[
+    {"id":"DT-001","machine":"M-12","start":"2025-09-06T09:10:00","end":"2025-09-06T09:40:00","reason":"Sensor failure","ticket":"TCK-45"},
+    {"id":"DT-002","machine":"M-03","start":"2025-09-06T11:05:00","end":"2025-09-06T11:20:00","reason":"Jam clearing","ticket":"TCK-46"}
+  ],
+  "machines":[
+    {"id":"M-01","status":"running","temp":72,"vibration":0.02,"oee":85},
+    {"id":"M-12","status":"maintenance","temp":null,"vibration":null,"oee":null},
+    {"id":"M-03","status":"running","temp":68,"vibration":0.015,"oee":82},
+    {"id":"M-07","status":"idle","temp":70,"vibration":0.01,"oee":78}
+  ],
+  "alerts":[
+    {"id":"A-101","severity":"critical","title":"RM shortage: Plastic grade X below threshold","time":"2025-09-06T12:40:00"},
+    {"id":"A-102","severity":"warning","title":"Vibration high on M-03","time":"2025-09-06T11:15:00"}
+  ]
+}
